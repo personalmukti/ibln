@@ -1,0 +1,447 @@
+body {
+    min-height: 1500px;
+}
+
+/* Styling for the hero section */
+.hero {
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+    height: 100vh;
+}
+
+/* Logo styling */
+.logo {
+    max-width: 80px;
+    /* Adjust the logo size as needed */
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: transparent;
+    z-index: 9999;
+    transition: all 0.5s ease;
+    padding: 10px 0;
+}
+
+/* Navbar dengan latar belakang saat di-scroll */
+.navbar-scrolled {
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Warna latar belakang navbar saat di-scroll */
+    padding: 5px 0;
+    /* Padding yang lebih kecil saat di-scroll */
+}
+
+/* Gaya untuk efek "shrink" navbar */
+.navbar.shrink {
+    padding: 5px 0;
+    /* Atur padding saat navbar mengecil */
+}
+
+/* Media query untuk navbar mobile */
+@media (max-width: 768px) {
+    .navbar-collapse {
+        background-color: #fff;
+        /* Warna latar belakang pada mode mobile */
+        /* Anda juga dapat menyesuaikan padding, margin, atau properti lain sesuai kebutuhan Anda */
+    }
+}
+
+/* Untuk membuat garis di bawah menu saat hover */
+.navbar-nav .nav-link {
+    color: #333;
+    font-size: 14px;
+    /* Warna teks menu */
+    transition: border-bottom 0.3s ease-in-out;
+    /* Efek transisi pada garis bawah */
+    padding-bottom: 2px;
+    /* Jarak garis dari teks menu */
+    border-bottom: 2px solid transparent;
+    /* Garis bawah awalnya tidak terlihat */
+}
+
+.navbar-nav .nav-link:hover {
+    border-bottom: 2px solid #2f3082;
+    /* Warna dan ketebalan garis bawah pada hover */
+    color: #2f3082;
+    /* Warna teks menu saat hover */
+}
+
+/* Tautan navigasi aktif (active) */
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+    /* Teks tautan aktif lebih tebal */
+    /* Anda juga dapat menyesuaikan warna atau properti lain jika diperlukan */
+}
+
+/* Heading PT. Interbenua Logistindo styling */
+.hero-heading {
+    font-family: 'HelveticaNowDisplay', sans-serif;
+    /* Ganti dengan jenis huruf yang Anda pilih */
+    font-size: 60px;
+    /* Sesuaikan dengan ukuran font yang Anda inginkan */
+    color: #2f3082;
+    /* Sesuaikan dengan warna branding perusahaan Anda */
+    font-weight: bold;
+    /* Tambahkan ketebalan huruf jika diperlukan */
+    margin-top: 20px;
+    text-align: left;
+    padding-left: 30px;
+    white-space: wrap;
+    -webkit-text-stroke: 1px #fff;
+}
+
+/* Styling untuk heading h6 di kiri bawah */
+.bottom-heading {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    font-size: 18px;
+    color: #2f3082;
+    -webkit-text-stroke: 0.3px #fff;
+    font-weight: bold;
+}
+
+/* Button styling */
+.buttons .btn {
+    margin-top: 20px;
+}
+
+.btn-whatsapp {
+    background-color: #25d366;
+}
+
+.btn-email {
+    background-color: #ff5722;
+}
+
+.btn-whatsapp,
+.btn-email {
+    color: #fff;
+}
+
+/* Hover effect for buttons (optional) */
+.buttons .btn:hover {
+    opacity: 0.8;
+}
+
+/* Responsive CSS */
+@media (max-width: 768px) {
+
+    /* Navbar adjustments for mobile view */
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-toggler {
+        margin-right: 15px;
+    }
+
+    /* Heading adjustments for mobile view */
+    .hero-heading {
+        text-align: center;
+        padding-left: 0;
+        margin-top: 50px;
+    }
+
+    /* Button adjustments for mobile view */
+    .buttons {
+        text-align: right;
+        position: fixed;
+        bottom: 5%;
+        right: 5%;
+        width: auto;
+    }
+
+    .btn {
+        margin: 10px;
+        display: inline-block;
+    }
+}
+
+/* Responsive CSS for desktop */
+@media (min-width: 769px) {
+    .buttons {
+        position: absolute;
+        bottom: 5%;
+        right: 5%;
+        text-align: right;
+    }
+}
+
+.btn-whatsapp,
+.btn-email {
+    width: 150px;
+    background-color: #2f3082;
+    border: #fff solid;
+    border-radius: 25px 25px 25px 25px;
+}
+
+/* Styling untuk Service List */
+.service-list {
+    position: absolute;
+    top: 18%;
+    /* Sesuaikan nilai -100px dengan tinggi navbar dan margin yang diperlukan */
+    right: 5%;
+    /* Samakan dengan posisi kanan button email */
+    text-align: right;
+    /* Untuk sejajarkan ke kanan */
+    color: #2f3082;
+    /* Warna teks yang sesuai */
+}
+
+.service-title {
+    font-size: 18px;
+    /* Ukuran font judul */
+    font-weight: bold;
+    /* Tebal font judul */
+}
+
+.service-items {
+    list-style-type: none;
+    /* Jenis marker list (bisa diganti sesuai kebutuhan) */
+    padding-left: 20px;
+    /* Jarak dari kiri */
+}
+
+.service-items li {
+    font-size: 14px;
+    /* Ukuran font item list */
+    margin: 5px 0;
+    /* Jarak antara item list */
+}
+
+
+.features,
+.about {
+    background-color: #2f3082;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.partner,
+.gallery {
+    background-color: #ececec;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.service-card {
+    border-radius: 0px !important;
+}
+
+.feature-card-body {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.feature-card-body:hover {
+    transform: scale(1.05);
+    /* Menggunakan transform scale untuk animasi zoom in */
+    transition: transform 0.3s ease;
+    /* Durasi dan jenis transisi */
+}
+
+.features-icon {
+    font-size: 18px;
+    text-align: center;
+    color: #2f3082;
+}
+
+.section-title {
+    color: #fff;
+}
+
+.section-title-dark {
+    color: #2f3082;
+}
+
+.feature-name {
+    color: #2f3082;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Styling kustom untuk hr */
+.custom-hr {
+    background-color: #fff;
+    /* Warna latar belakang putih */
+    height: 5px !important;
+    /* Ketebalan garis */
+    width: 500px;
+    /* Lebar garis */
+    margin: 10px auto;
+    /* Spasi atas dan bawah 10px, dan tengah secara horizontal */
+    border: none;
+    /* Hapus border default jika ada */
+}
+
+.custom-hr-dark {
+    background-color: #2f3082;
+    /* Warna latar belakang putih */
+    height: 5px !important;
+    /* Ketebalan garis */
+    width: 500px;
+    /* Lebar garis */
+    margin: 10px auto;
+    /* Spasi atas dan bawah 10px, dan tengah secara horizontal */
+    border: none;
+    /* Hapus border default jika ada */
+}
+
+.about-info {
+    border-radius: 50px 0px 50px 0px;
+    height: 500px;
+}
+
+.about-body {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.about-img {
+    border-radius: 0px 50px 0px 50px;
+    height: 500px;
+}
+
+.bumpcol:hover {
+    transform: scale(1.05);
+    /* Menggunakan transform scale untuk animasi zoom in */
+    transition: transform 0.3s ease;
+    /* Durasi dan jenis transisi */
+}
+
+.about-glance {
+    color: #2f3082;
+    font-size: 18px;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+.about-text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn-about {
+    width: 150px;
+    border: 2px solid #2f3082;
+    /* Border outline dengan warna #2f3082 */
+    color: #2f3082;
+    /* Warna teks */
+    background-color: transparent;
+    /* Latar belakang transparan */
+    border-radius: 0px;
+    /* Sudut border radius */
+    text-align: center;
+    /* Pusatkan teks secara horizontal */
+    transition: background-color 0.3s, color 0.3s;
+    /* Transisi untuk efek hover */
+}
+
+.btn-about:hover {
+    background-color: #2f3082;
+    /* Warna latar belakang saat di-hover */
+    color: #fff;
+    /* Warna teks saat di-hover */
+}
+
+.dark-footer {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-footer {
+    padding-top: 50px;
+    padding-bottom: 25px;
+    background-color: #333;
+    /* Ganti dengan warna latar belakang yang sesuai */
+    color: #fff;
+    /* Warna teks */
+    padding: 20px 0;
+    /* Padding atas dan bawah */
+}
+
+.dark-footer img {
+    display: block;
+    /* Agar gambar menjadi elemen block */
+    margin: 0 auto;
+    /* Pusatkan gambar secara horizontal */
+}
+
+.dark-footer p {
+    text-align: center;
+    /* Pusatkan teks secara horizontal */
+    margin-top: 10px;
+    /* Beri jarak atas antara gambar dan teks */
+}
+
+.partner-text {
+    font-size: 15px;
+    padding-top: 20px;
+}
+
+.gallery-slider {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+    /* Menghilangkan margin dari setiap item */
+}
+
+.gallery-item {
+    flex: 1;
+    padding: 10px;
+    /* Menambahkan margin sekitar setiap item */
+    box-sizing: border-box;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    /* Sudut bulat pada gambar */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /* Bayangan untuk gambar */
+    transition: transform 0.3s ease;
+    /* Efek transisi ketika gambar di-hover */
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+    /* Efek zoom in ketika di-hover */
+}
+
+.gallery-slider img {
+    min-width: 100%;
+    /* Gambar akan memiliki lebar minimum 100% dari parentnya */
+    height: auto;
+    /* Tinggi gambar akan disesuaikan secara otomatis */
+    margin-right: 10px;
+}
+
+
+/* Gaya untuk tombol "previous" dan "next" */
+.slick-prev,
+.slick-next {
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9999;
+    /* Pastikan tombol ini tampil di atas gambar */
+}
+
+.slick-prev {
+    left: 0;
+    /* Tempatkan tombol "previous" di kiri */
+}
+
+.slick-next {
+    right: 0;
+    /* Tempatkan tombol "next" di kanan */
+}
