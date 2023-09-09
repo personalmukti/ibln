@@ -1,7 +1,7 @@
 @extends('layouts.app2')
 
 @section('content')
-    @include('partials.navworks')
+    @include('partials.header')
 
     <div class="main">
         @include('partials.about')
@@ -12,6 +12,4 @@
 
         @include('partials.gallery')
     </div>
-
-    @include('partials.footer')
 @endsection

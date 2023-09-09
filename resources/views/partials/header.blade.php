@@ -1,8 +1,5 @@
-<header class="hero" style="background-image: url('')">
-    <img src="{{ asset('img/freighter.jpg') }}" class="bg-image">
-    @include('partials.navbar')
-
-    <div class="hero-content">
+<header class="hero" style="background-image: url('{{ asset('img/freighter.jpg') }}')">
+    <div class="hero-content" >
         <h1 class="hero-heading animate__animated animate__slideInLeft" id="pt">PT. INTERBENUA LOGISTINDO</h1>
         <div class="buttons">
             <a href="https://wa.me/contohnomor" class="btn btn-whatsapp animate__animated animate__slideInUp">WhatsApp</a>

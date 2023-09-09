@@ -18,7 +18,7 @@ body {
 }
 
 .navbar-scrolled {
-    background-color: #bbbbbb;
+    background-color: #333;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 
@@ -255,6 +255,12 @@ body {
     /* Hapus border default jika ada */
 }
 
+.partner-card {
+    border-radius: 0px 0px 0px 0px;
+    background-color: #2f3082;
+    color: #fff;
+}
+
 .about-info {
     border-radius: 50px 0px 50px 0px;
     height: 500px;
@@ -411,3 +417,8 @@ body {
     right: 0;
     /* Tempatkan tombol "next" di kanan */
 }
+
+.text-white-on
+ {
+    color: #fff;
+ }
