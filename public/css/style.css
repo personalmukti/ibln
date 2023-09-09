@@ -1,5 +1,30 @@
 body {
-    min-height: 1500px;
+    overflow-x: hidden;
+}
+
+.bg-image {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: brightness(0.6);
+}
+
+.navbar {
+    transition: all 0.5;
+}
+
+.navbar-scrolled {
+    background-color: #bbbbbb;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.ibl-video {
+    position: relative;
+    top: 100px !important;
 }
 
 /* Styling for the hero section */
@@ -19,63 +44,7 @@ body {
     /* Adjust the logo size as needed */
 }
 
-/* Navbar styling */
-.navbar {
-    background-color: transparent;
-    z-index: 9999;
-    transition: all 0.5s ease;
-    padding: 10px 0;
-}
 
-/* Navbar dengan latar belakang saat di-scroll */
-.navbar-scrolled {
-    background-color: rgba(255, 255, 255, 0.9);
-    /* Warna latar belakang navbar saat di-scroll */
-    padding: 5px 0;
-    /* Padding yang lebih kecil saat di-scroll */
-}
-
-/* Gaya untuk efek "shrink" navbar */
-.navbar.shrink {
-    padding: 5px 0;
-    /* Atur padding saat navbar mengecil */
-}
-
-/* Media query untuk navbar mobile */
-@media (max-width: 768px) {
-    .navbar-collapse {
-        background-color: #fff;
-        /* Warna latar belakang pada mode mobile */
-        /* Anda juga dapat menyesuaikan padding, margin, atau properti lain sesuai kebutuhan Anda */
-    }
-}
-
-/* Untuk membuat garis di bawah menu saat hover */
-.navbar-nav .nav-link {
-    color: #333;
-    font-size: 14px;
-    /* Warna teks menu */
-    transition: border-bottom 0.3s ease-in-out;
-    /* Efek transisi pada garis bawah */
-    padding-bottom: 2px;
-    /* Jarak garis dari teks menu */
-    border-bottom: 2px solid transparent;
-    /* Garis bawah awalnya tidak terlihat */
-}
-
-.navbar-nav .nav-link:hover {
-    border-bottom: 2px solid #2f3082;
-    /* Warna dan ketebalan garis bawah pada hover */
-    color: #2f3082;
-    /* Warna teks menu saat hover */
-}
-
-/* Tautan navigasi aktif (active) */
-.navbar-nav .nav-link.active {
-    font-weight: bold;
-    /* Teks tautan aktif lebih tebal */
-    /* Anda juga dapat menyesuaikan warna atau properti lain jika diperlukan */
-}
 
 /* Heading PT. Interbenua Logistindo styling */
 .hero-heading {
@@ -131,14 +100,7 @@ body {
 /* Responsive CSS */
 @media (max-width: 768px) {
 
-    /* Navbar adjustments for mobile view */
-    .navbar-nav {
-        text-align: center;
-    }
 
-    .navbar-toggler {
-        margin-right: 15px;
-    }
 
     /* Heading adjustments for mobile view */
     .hero-heading {
@@ -296,6 +258,10 @@ body {
 .about-info {
     border-radius: 50px 0px 50px 0px;
     height: 500px;
+}
+
+.about-complete {
+    border-radius: 50px 0px 50px 0px;
 }
 
 .about-body {
